@@ -410,6 +410,9 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 680px; font-s
 .core li::marker { color: var(--klein); }
 
 .group-title.sub { margin-top: clamp(72px, 8vw, 110px); }
+.group-intro { color: var(--muted); max-width: 62ch; margin: calc(clamp(40px, 5vw, 60px) * -0.4) 0 clamp(32px, 4vw, 48px); }
+:lang(zh) .group-intro { max-width: 40em; }
+.group-intro + .core { margin-bottom: clamp(56px, 6vw, 80px); }
 .group-title { display: flex; align-items: baseline; gap: 18px; margin: 0 0 clamp(40px, 5vw, 60px); padding-bottom: 18px; border-bottom: 1px solid var(--navy); }
 
 .people { display: grid; gap: clamp(48px, 5vw, 72px); }
