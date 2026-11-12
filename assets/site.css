@@ -508,6 +508,15 @@ table.compare { width: 100%; border-collapse: collapse; min-width: 680px; font-s
 }
 .chip:hover { border-color: var(--klein); color: var(--klein); }
 .chip[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.insights .feature-wrap + .section-head { margin-top: clamp(40px, 5vw, 72px); }
+.post-card.feature .post-meta { align-self: end; }
+.empty-note { border-top: 1px solid var(--navy); padding-top: 22px; color: var(--muted); max-width: 60ch; }
+.post-card .post-title { text-wrap: pretty; }
+:lang(zh) .post-card .post-title, :lang(zh) .post-head h1 { word-break: keep-all; overflow-wrap: anywhere; }
+.post-card.feature.en .kicker { letter-spacing: 0.18em; text-transform: uppercase; font-size: 12px; }
+.post-body { overflow-wrap: anywhere; }
+.post-body th, .post-body td { overflow-wrap: normal; }
+.subscribe h2.en-h2 { font-family: var(--display); font-weight: 400; letter-spacing: 0.01em; font-size: clamp(30px, 3.4vw, 44px); line-height: 1.2; }
 
 .subscribe { display: grid; grid-template-columns: minmax(0, 640px) auto; justify-content: start; column-gap: clamp(48px, 9vw, 140px); row-gap: 40px; align-items: center; }
 .subscribe-text { max-width: 600px; }
